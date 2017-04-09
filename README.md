@@ -1,6 +1,6 @@
 # ErisBMS
 
-A battery management system to control chaos.
+A battery management system to help regulate chaos.
 
 # Supported Chemestries
 
