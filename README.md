@@ -20,6 +20,16 @@ this no pre-compiled binaries are available.
 
 ``platformio run -t upload``
 
+# High level design
+
+* **LiIon:** V_MAX = 4.2, V_MIN = 3.0, TEMP_MAX = 60
+
+* Cells with voltage > V_MAX have their dump relays closed to bleed
+  off excess capacity.
+* Any cell with voltage < V_MIN results in the main output being
+  disabled until voltage is re-applied 
+* Extra: Any cell temp over TEMP_MAX C is disabled.
+
 # DISCLAIMER
 
 The work in this repository comes with NO warrany.
